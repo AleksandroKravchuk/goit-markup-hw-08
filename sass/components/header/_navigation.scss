@@ -1,0 +1,52 @@
+.header-sektion {
+    background-color: $header-fone-color;
+    border-bottom   : 1px solid #ECECEC;}
+.main-nave {
+    display    : flex;
+    align-items: center;}
+.header-sektion__nave {
+    display    : flex;
+    align-items: center;}
+.header-sektion__list {
+     display    : flex;
+     margin-left: 93px;}
+.header-sektion__item:not(:last-child) {
+    margin-right: 50px;}
+.header-sektion__link {
+    display        : block;
+    padding-top    : 32px;
+    padding-bottom : 32px;
+    color          : $main-text-color;
+    font-weight    : 500;
+    font-size      : 14px;
+    line-height    : 1.2;
+    letter-spacing : 0.02em;
+    text-decoration: none;
+    transition     : color $transition-time $function-transition;
+ &:hover,
+ &:focus {
+    color: $accent-color;}
+&--active {
+    position: relative;}
+&--active:hover,
+&--active:focus,
+&--active:active,
+&--active:visited {
+    color: $accent-color;}
+&--active::after {
+    position     : absolute;
+    content      : "";
+    display      : block;
+    bottom       : 0;
+    width        : 100%;
+    height       : 4px;
+    background   : $accent-color;
+    border-radius: 2px;
+    transition   : transform $transition-time $function-transition;}
+}
+   
+    
+
+
+
+    

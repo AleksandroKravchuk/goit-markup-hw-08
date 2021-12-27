@@ -1,0 +1,82 @@
+.services {
+    padding-top   : 94px;
+    padding-bottom: 94px;}
+.services__list-button {
+    display        : flex;
+    justify-content: center;
+    margin-bottom  : 50px;}
+.services__item:not(:last-child) {
+    margin-right: 8px;}
+.services__list-card {
+    display    : flex;
+    flex-wrap  : wrap;
+    margin-top : -30px;
+    margin-left: -30px;}
+.services__card {
+    flex-basis : calc(100%/3 - $card-set);
+    background : $header-fone-color;
+    margin-top : $card-set;
+    margin-left: $card-set;} 
+.services__link {
+    display        : block;
+    text-decoration: none;
+    color          : inherit;
+    transition     : box-shadow $transition-time $function-transition;   
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);}
+    }
+
+.services__thumb {
+    position: relative;
+    overflow: hidden;
+}
+.services__overlay {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    transform       : translate(0, 100%);
+    width           : 100%;
+    height          : 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity         : 0;
+    transition      : opacity $transition-time $function-transition, transform $transition-time $function-transition;
+    .services__link:hover &,
+    .services__link:focus-within & {
+    transform: translate(0, 0);
+    opacity  : 1;
+}
+}
+.services__text-overlay {
+    position   : absolute;
+    top        : 0;
+    font-size  : 18px;
+    line-height: 1.55;
+    color      : $header-fone-color;
+    padding    : 63px 24px;
+}
+
+.services__content {
+    padding-right : 24px;
+    padding-left  : 24px;
+    padding-bottom: 20px;
+    padding-top   : 20px;
+    border-right  : 1px solid #EEEEEE;
+    border-bottom : 1px solid #EEEEEE;
+    border-left   : 1px solid #EEEEEE;
+}
+
+.services__title {
+    font-weight: bold;
+    font-size  : 18px;
+    line-height: 2;
+}
+
+.services__text {
+    color      : $text-color;
+    font-size  : 16px;
+    line-height: 1.9;
+    margin-top : 4px;}    
+

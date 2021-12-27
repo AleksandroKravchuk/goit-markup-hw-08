@@ -1,0 +1,29 @@
+.footer-sektion {
+    background    : $footer-fone-color;
+    padding-top   : 60px;
+    padding-bottom: 60px;}
+.footer__logo {
+    margin-bottom: 20px;}
+.footer-sektion__adress {
+    color        : $header-fone-color;
+    font-style   : normal;
+    font-size    : 14px;
+    line-height  : 1.7;
+    margin-bottom: 9px;
+    margin-left  : 0px;}
+.footer-sektion__contakts:not(:last-child) {
+    margin-bottom: 9px;}
+.footer-sektion__link {
+    color          : rgba(255, 255, 255, 0.6);
+    font-style     : normal;
+    font-size      : 14px;
+    line-height    : 1.7;
+    text-decoration: none;
+    transition     : color $transition-time $function-transition; 
+    &:hover,
+    &:focus {
+    color: $accent-color;}}
+   
+.footer-sektion>.container {
+    display    : flex;
+    align-items: baseline;}

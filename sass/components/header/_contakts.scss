@@ -1,0 +1,28 @@
+.contakts {
+    display    : flex;
+    align-items: center;
+    margin-left: auto;
+.contakts__item:not(:last-child) {
+    margin-right: 50px;}
+.contakts__link {
+    display        : flex;
+    align-items    : center;
+    color          : $text-color;
+    font-weight    : 500;
+    font-size      : 14px;
+    line-height    : 1.2;
+    letter-spacing : 0.02em;
+    text-decoration: none;
+    transition     : color $transition-time $function-transition, fill $transition-time $function-transition;
+&:hover,
+&:focus {
+    color: $accent-color;}
+&:hover .contakts__icon,
+&:focus .contakts__icon {
+        fill: $accent-color;}
+}
+.contakts__icon {
+    margin-right: 10px;
+    fill        : $text-color;}
+       
+}

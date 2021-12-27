@@ -1,0 +1,13 @@
+.join {
+    margin-left: 70px;
+    &__text {
+    font-weight   : bold;
+    font-size     : 14px;
+    line-height   : 1.14;
+    text-transform: uppercase;
+    color         : $header-fone-color;}
+    &__list {
+    display: flex;}
+    &__item:not(:last-child) {
+    margin-right: 10px;}
+}

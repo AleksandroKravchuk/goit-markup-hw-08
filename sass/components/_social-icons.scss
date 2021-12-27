@@ -1,0 +1,34 @@
+.icon-list {
+    display   : flex;
+    margin-top: 16px;}
+.icon-list__item:not(:last-child) {
+    margin-right  : 10px;
+    padding-bottom: 0;}
+.icon-list__link {
+    display      : block;
+    width        : 44px;
+    height       : 44px;
+    border-radius: 50%;
+    text-align   : center;
+    padding-top  : 12px;}
+.icon-list__link--team {
+    @extend .icon-list__link;
+    background-color: $header-fone-color;
+    fill            : #AFB1B8;
+    transition      : background-color $transition-time $function-transition, fill $transition-time $function-transition;
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    fill            : $header-fone-color;}}
+
+.icon-list__link--footer {
+    @extend .icon-list__link;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill            : $header-fone-color;
+    margin-top      : 20px;
+    transition      : background-color $transition-time $function-transition;
+    &:hover,
+    &:focus {
+    background-color: $accent-color}
+}
+
