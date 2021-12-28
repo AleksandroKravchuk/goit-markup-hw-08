@@ -490,12 +490,6 @@ ul {
   padding-bottom: 94px;
 }
 
-.advantages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .advantages__card {
   width: 270px;
 }

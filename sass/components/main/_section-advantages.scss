@@ -2,11 +2,21 @@
     padding-top   : 94px;
     padding-bottom: 94px;
     &__list {
-    // display: flex;}
-
+@media screen and (min-width: 678px){
+   display: flex;
+   flex-wrap: wrap;
+}
 
     &__card {
+@media screen and (min-width: 480px) {
+    width: 450px;}
+
+@media screen and (min-width: 768px) {
+    width: 354px;}
+
+@media screen and (min-width: 1200px) {
     width: 270px;}
+}
     &__card:not(:last-child) {
     margin-right: $card-set;}
     &__emblem {
