@@ -2,15 +2,10 @@
     padding-top   : 94px;
     padding-bottom: 94px;
     &__list {
-       @media screen and (min-width: 480px){
-         display: flex;
-         flex-wrap: wrap;
-       } 
-}
+    // display: flex;}
+
+
     &__card {
-        @media screen and (min-width: 480px){
-           width: 450px; 
-        }
     width: 270px;}
     &__card:not(:last-child) {
     margin-right: $card-set;}

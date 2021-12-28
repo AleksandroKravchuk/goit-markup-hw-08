@@ -490,24 +490,14 @@ ul {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .advantages__card {
   width: 270px;
-}
-
-@media screen and (min-width: 480px) {
-  .advantages__card {
-    width: 450px;
-  }
 }
 
 .advantages__card:not(:last-child) {
