@@ -1,13 +1,49 @@
 .section-team {
     background-color: #F5F4FA;
-    padding-top     : 94px;
-    padding-bottom  : 94px;
+    
+    padding-top   : 60px;
+    padding-bottom: 60px;
+     @media screen and (min-width: 1200px) {
+     padding-top   : 94px;
+     padding-bottom: 94px;
+ }
     &__list {
-    display: flex;}
+    @media screen and (min-width: 768px) {
+   display: flex;
+   flex-wrap: wrap;
+}
+    &__list {
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+    }
+
+
+    }
     &__item {
-    width: 270px;}
+    @media screen and (min-width: 480px){
+         width: 450px;
+    }    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-basis: calc(100%/2 - $card-set);
+        margin-top: $card-set;
+        margin-left: $card-set;
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
+    }
+
+     &__item:not(:last-child) {
+     @media screen and (max-width: 767px) {
+         margin-bottom: $card-set;
+     }
+    }
     &__item:not(:last-child) {
+        @media screen and (min-width: 1200px) {
     margin-right: $card-set;}
+   }
     &__content {
     background-color: $header-fone-color;
     padding         : 30px 32px;
