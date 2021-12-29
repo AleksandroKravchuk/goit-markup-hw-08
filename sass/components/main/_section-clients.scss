@@ -8,38 +8,36 @@
     text-align    : center;
 .clients__list {
     display: flex;
-    flex-wrap: wrap;}
-.clients__item {
-    height       : 92px;
-    display      : flex;
-    border-radius: 4px;
-    @media screen and (min-width: 480px) {
-    width: 210px;}
-    @media screen and (min-width: 768px) {
-    width : 226px;}
-    @media screen and (min-width: 1200px) {
-    width : 170px;}
-    }
-.clients__item:nth-child(odd) {
-    @media screen and (max-width: 480px) {
-        margin-right: $card-set;}
-}    
-.clients__item:nth-child(-n+4) {
-    @media screen and (max-width: 480px) {
-        margin-bottom: $card-set;}
+    flex-wrap: wrap;
+     @media screen and (max-width: 1199px) {
+     margin-top: -30px;
+     margin-left: -30px;
+ }
 }
-// .clients__item:nth-child(1, 2, 4, 5) {
-//     @media screen and (min-width: 768px) (max-width: 1199px) {
-//         margin-right: $card-set;}
-// }
+.clients__item {
+    
+    @media screen and (max-width: 1199px) {
+    width:calc((100% - 60px)/2);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+    @media screen and (min-width: 768px) {
+     width      :calc((100% - 90px)/3);
+   }
+    @media screen and (min-width: 1200px) {
+    width :calc((100% - 150px)/6)}
+    }
+
 .clients__item:not(:last-child) {
      @media screen and (min-width: 1200px) {
      margin-right: $card-set;}
     }
 .clients__icon {
-    display: flex;
     margin : 16px 32px;}
 .clients__link {
+    display      : flex;
+    justify-content: center;
+    align-items: center;
     border    : 1px solid #AFB1B8;
     fill      : #AFB1B8;
     border-radius: 4px;

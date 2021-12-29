@@ -10,37 +10,23 @@
     @media screen and (min-width: 768px) {
    display: flex;
    flex-wrap: wrap;
-}
-    // &__list {
-    //     @media screen and (min-width: 768px) and (max-width: 1199px){
-    //         margin-top: -30px;
-    //         margin-left: -30px;
-    //     }
-    // }
-
-
+   @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-top: -30px;
+            margin-left: -30px;}}
     }
+    
     &__item {
     @media screen and (min-width: 480px){
          max-width: 450px;
     }    
-    // @media screen and (min-width: 768px) and (max-width: 1199px){
-    //     // flex-basis: calc(100/2 - $card-set);
-    //     margin-top: $card-set;
-    //     margin-left: $card-set;
-    // }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width:calc((100% - 60px)/2);
+        margin-top: $card-set;
+        margin-left: $card-set;
+    }
     @media screen and (min-width: 1200px){
-        width: 270px;
+        width: 270px;}
     }
-    }
-&__item:nth-child(odd) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: $card-set;}
-}
-&__item:nth-child(-n+2) {
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-     margin-bottom: $card-set;}
-}
 
      &__item:not(:last-child) {
      @media screen and (max-width: 767px) {
