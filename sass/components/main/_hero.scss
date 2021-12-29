@@ -1,7 +1,7 @@
 .hero {
     text-align    : center;
-    padding-top   : 200px;
-    padding-bottom: 200px;
+    padding-top   : 118px;
+    padding-bottom: 118px;
     max-width     : 1600px;
     height        : 600px;
     margin-left   : auto;
@@ -12,6 +12,10 @@
     background-size    : cover;
     background-repeat  : no-repeat;
     background-color   : $footer-fone-color;
+   @media screen and (min-width: 1200px) {
+    padding-top : 200px;
+    padding-bottom: 200px;
+    }
     &__name {
     color         : $header-fone-color;
     font-weight   : 900;
