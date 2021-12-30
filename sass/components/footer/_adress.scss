@@ -1,7 +1,11 @@
 .footer-sektion {
     background    : $footer-fone-color;
     padding-top   : 60px;
-    padding-bottom: 60px;}
+    padding-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+    text-align: start;}
+}
 .footer__logo {
     margin-bottom: 20px;}
 .footer-sektion__adress {
@@ -9,10 +13,17 @@
     font-style   : normal;
     font-size    : 14px;
     line-height  : 1.7;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
     margin-bottom: 9px;
-    margin-left  : 0px;}
+}
+    }
 .footer-sektion__contakts:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
     margin-bottom: 9px;}
+}
 .footer-sektion__link {
     color          : rgba(255, 255, 255, 0.6);
     font-style     : normal;
@@ -25,5 +36,11 @@
     color: $accent-color;}}
    
 .footer-sektion>.container {
+    @media screen and (min-width: 768px) {
     display    : flex;
-    align-items: baseline;}
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+    }
+

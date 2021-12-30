@@ -1,13 +1,26 @@
 .join {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+    margin: 0;
+}
+    @media screen and (min-width: 1200px) {
     margin-left: 70px;
+}
+    
     &__text {
     font-weight   : bold;
     font-size     : 14px;
     line-height   : 1.14;
     text-transform: uppercase;
-    color         : $header-fone-color;}
+    color         : $header-fone-color;
+    @media screen and (max-width: 767px) {
+    margin-top: 60px;}
+}
     &__list {
-    display: flex;}
+    display: flex;
+    justify-content: center;
+}
     &__item:not(:last-child) {
     margin-right: 10px;}
 }
