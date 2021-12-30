@@ -1,22 +1,52 @@
 .services {
+    padding-top    : 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
     padding-top   : 94px;
     padding-bottom: 94px;}
+}
 .services__list-button {
     display        : flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom  : 50px;}
+    margin-bottom  : 40px;
+    @media screen and (min-width: 768px) {
+    margin-bottom : 30px;}
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;}
+}
 .services__item:not(:last-child) {
     margin-right: 8px;}
+.services__item:nth-child(-n+3) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;}
+}
+
 .services__list-card {
-    display    : flex;
-    flex-wrap  : wrap;
-    margin-top : -30px;
-    margin-left: -30px;}
+    @media screen and (min-width: 768px) {
+    display  : flex;
+    flex-wrap: wrap;
+    margin: -15px;}
+}
+    
+.services__card:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: $card-set;}
+}  
 .services__card {
-    flex-basis : calc(100%/3 - $card-set);
+    @media screen and (min-width: 480px) {
+    max-width: 450px;
+}
+    @media screen and (min-width: 768px) {
+    width : calc((100% - 60px)/2);
+    margin: 15px;
+}
+    @media screen and (min-width: 1200px) {
+    flex-basis : calc(100%/3 - 90px);
+    margin: 15px;
+}
     background : $header-fone-color;
-    margin-top : $card-set;
-    margin-left: $card-set;} 
+  } 
 .services__link {
     display        : block;
     text-decoration: none;

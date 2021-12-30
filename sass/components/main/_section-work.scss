@@ -1,4 +1,8 @@
 .section-work {
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
     padding-bottom: 94px;
     &__list {
     display: flex;}
@@ -23,5 +27,5 @@
     font-size     : 14px;
     line-height   : 1.14;
     text-transform: uppercase;
-    color         : $header-fone-color;}
+    color         : $header-fone-color;} 
 }
