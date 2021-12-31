@@ -1,0 +1,7 @@
+@mixin font ($fw, $fs, $lh, $ls, $color) {
+font-weight: bold;
+font-size  : 20px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: $main-text-color;
+}
