@@ -20,6 +20,10 @@ p {
   margin: 0px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   height: auto;
   margin-left: auto;
@@ -90,6 +94,7 @@ ul {
 }
 
 .header-sektion {
+  position: relative;
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
 }

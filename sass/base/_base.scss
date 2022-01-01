@@ -17,6 +17,9 @@ h6,
 p {
     margin: 0px;
 }
+body.modal-open {
+overflow: hidden;
+}
 .container {
     height       : auto;
     margin-left  : auto;
