@@ -1,8 +1,15 @@
 .menu-button {
+    fill: $main-text-color;
     margin-left: auto;
     padding: 0;
     border: none;
-    background-color: salmon;
+    z-index: 2;
+    background-color: $header-fone-color;
+    transition: fill $transition-time $function-transition;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
    @media screen and (min-width: 768px) {
        display: none;}
 }
@@ -16,15 +23,15 @@
 .menu-button.is-open .menu-button__icon--cross {
     display: none;
 }
-.menu-button__menu-container {
- 
+.mobile__menu-container {
+@media screen and (max-width: 767px) {
 position  : absolute;
-top       : 100%;
+top       : 0;
 left      : 0;
 display   : inline-flex;
-width     : 100%;
+width: 100%;
 padding   : 48px 40px;
-background: salmon;
+background: $header-fone-color;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
 0px 2px 4px rgba(0, 0, 0, 0.08),
 0px 1px 3px rgba(0, 0, 0, 0.16); 
@@ -33,14 +40,25 @@ display: none;
     &.is-open {
     display: block;
     }
- .menu-button__list {
+} 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+top: 100%;
+left: 50%;
+transform: translatex(-50%);
+width     : 480px;
+}
+@media screen  and (min-width: 768px) {
+    display: none;
+}
+
+ .mobile__list {
     margin-bottom: 302px;
  }   
- .menu-button__item:not(last-child) {
+ .mobile__item:nth-child(-n+2) {
     margin-bottom: 32px;
  }
- .menu-button__link {
- color          : $main-text-color;
+ .mobile__link {
+ color          :$text-color;
  font-weight    : 500;
  font-size  : 40px;
  line-height: 1.17;
@@ -58,16 +76,46 @@ display: none;
  &--active:visited {
      color: $accent-color;}
  }
- .menu-button__contakts {
+ .mobile__contakts {
      margin-bottom: 64px;
  }
- .menu-button__contakts-item:not(last-child) {
+ .mobile__contakts-item:first-child {
  margin-bottom: 32px;
  }
- .menu-button__contakts-tel {
+
+ .mobile__contakts-tel {
+   @include mobile__contakts (34px);
+   transition: color $transition-time $function-transition;
+    &:hover,
+    &:focus {
+        color: $accent-color; }
+ }
+ .mobile__contakts-mail {
+    @include mobile__contakts (24px);
+    transition: color $transition-time $function-transition;
+    &:hover,
+    &:focus {
+    color: $accent-color;}
+ }
+ .mobile__social {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ .mobile__social-icon:nth-child(-n+3) {
+     margin-right: 20px;
+ }
+ .mobile__social-link {
     font-weight: 500;
-    font-size  : 34px;
-    line-height: 1.18;
+    font-size  : 18px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+    transition: color $transition-time $function-transition;
+    &:hover,
+    &:focus {
+    color: aqua;
+    }
  }
 }
