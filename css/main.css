@@ -314,7 +314,7 @@ ul {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  padding: 93px 15px;
+  padding: 20px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 3;
@@ -335,8 +335,6 @@ ul {
 }
 
 .modal {
-  top: 0;
-  left: 0;
   position: relative;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

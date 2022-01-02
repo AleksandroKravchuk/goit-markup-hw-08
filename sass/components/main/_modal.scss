@@ -4,7 +4,7 @@
     left            : 0;
     min-width       : 100%;
     min-height      : 100%;
-    padding: 93px 15px;
+    padding: 20px 15px;
     background-color: rgba(0, 0, 0, 0.2);
     opacity         : 1;
     z-index: 3;
@@ -18,8 +18,8 @@
     transform: scale(0.9) translate(-50%, -50%);}
 }
 .modal {
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     position: relative;
     @media screen and (min-width: 480px) {
     width: 450px;
