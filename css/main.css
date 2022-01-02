@@ -335,7 +335,6 @@ ul {
 }
 
 .modal {
-  position: relative;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -663,7 +662,7 @@ ul {
 }
 
 .mobile__menu-container .mobile__list {
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .mobile__menu-container .mobile__item:nth-child(-n+2) {

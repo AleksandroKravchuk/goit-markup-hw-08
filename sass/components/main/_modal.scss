@@ -18,7 +18,7 @@
     transform: scale(0.9) translate(-50%, -50%);}
 }
 .modal {
-    position: relative;
+    // position: relative;
     @media screen and (min-width: 480px) {
     width: 450px;
     position        : absolute;
@@ -27,7 +27,7 @@
     transform       : scale(1) translate(-50%, -50%);
 }
     
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     width : 528px;
 }
     background-color: $header-fone-color;
