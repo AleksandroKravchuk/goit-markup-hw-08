@@ -1,10 +1,10 @@
 .backdrop {
-    padding: 93px 15px;
     position        : fixed;
     top             : 0;
     left            : 0;
     min-width       : 100%;
     min-height      : 100%;
+    padding: 93px 15px;
     background-color: rgba(0, 0, 0, 0.2);
     opacity         : 1;
     overflow-y: scroll;
@@ -18,7 +18,7 @@
 }
 .modal {
     position: relative;
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 480px) {
     width: 450px;
     position        : absolute;
     top             : 50%;

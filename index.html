@@ -17,6 +17,7 @@
         <div class="container main-nave">
         <nav class="header-sektion__nave">
         <a href="./index.html" class="logo">Web<span class="logo__header">Studio</span></a>
+        
         <ul class="header-sektion__list">
             <li class="header-sektion__item"><a href="./index.html" class="header-sektion__link header-sektion__link--active">Студия</a></li>
             <li class="header-sektion__item"><a href="./portfolio.html" class="header-sektion__link">Портфолио</a></li>
@@ -33,14 +34,22 @@
                     <use href="./images/symbol-defs.svg#icon-smartphone-1"> </use>
                 </svg>+38 096 111 11 11</a></li>
             </ul>
-        <button type="button" class="header-sektion__menu-button is-open" aria-expanded="false" data-menu-button>
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
             <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon--cross" href="./images/symbol-defs.svg#menu1"></use>
-                <use class="icon--menu" href="./images/symbol-defs.svg#menu2"></use>
+                <use class="menu-button__icon--cross" href="./images/symbol-defs.svg#menu1"></use>
+                <use class="menu-button__icon--menu" href="./images/symbol-defs.svg#menu2"></use>
             </svg>
         </button>
-        <div class="header-sektion__menu-container">
-          
+        <div class="menu-button__menu-container" data-menu>
+            <ul class="menu-button__list">
+                <li class="menu-button__item"><a href="./index.html" class="menu-button__link">Студия</a></li>
+                <li class="menu-button__item"><a href="./portfolio.html" class="menu-button__link">Портфолио</a></li>
+                <li class="menu-button__item"><a href="" class="menu-button__link">Контакты</a></li>
+            </ul>
+            <ul class="menu-button__contakts">
+                <li class="menu-button__contakts-item"><a class="menu-button__contakts-tel" href="tel:380961111111">
+                <li class="menu-button__contakts-item"><a class="menu-button__contakts-mail" href="mailto:info@devstudio.com">
+            </ul>
         </div>
         </div>
     </header>
