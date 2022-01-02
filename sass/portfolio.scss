@@ -2,6 +2,8 @@
 @import "./utils/variables";
 @import "./base/stylesheet";
 @import "./utils/vis-hidden";
+@import "./utils/mixins";
+@import "./components/header/mobile-menu";
 @import "./components/header/logo";
 @import "./components/header/navigation";
 @import "./components/header/contakts";
