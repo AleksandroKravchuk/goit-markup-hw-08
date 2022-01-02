@@ -314,7 +314,7 @@ ul {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  padding: 20px 15px;
+  padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 3;
@@ -365,7 +365,7 @@ ul {
 
 .modal .modal__button-close {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: 8px;
   right: 8px;
   width: 30px;
