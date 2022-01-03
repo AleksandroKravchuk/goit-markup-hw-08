@@ -7,6 +7,9 @@ body {
     letter-spacing: 0.03em;
     color         : var(--main-text-color);
 }
+body.modal-open {
+overflow: hidden;
+}
 
 h1,
 h2,
@@ -17,9 +20,7 @@ h6,
 p {
     margin: 0px;
 }
-body.modal-open {
-overflow: hidden;
-}
+
 .container {
     height       : auto;
     margin-left  : auto;
@@ -41,4 +42,9 @@ ul {
     list-style: none;
     padding   : 0px;
     margin    : 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+
 }

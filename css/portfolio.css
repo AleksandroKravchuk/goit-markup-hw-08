@@ -10,6 +10,10 @@ body {
   color: var(--main-text-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -18,10 +22,6 @@ h5,
 h6,
 p {
   margin: 0px;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 
 .container {
@@ -54,6 +54,11 @@ ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -596,6 +601,11 @@ ul {
   margin-top: 4px;
 }
 
+.services__thumb {
+  width: 370px;
+  height: auto;
+}
+
 .footer-sektion {
   background: #2F303A;
   padding-top: 60px;
@@ -713,7 +723,6 @@ ul {
 
 .subscription {
   margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -722,9 +731,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscription {
-    margin-left: auto;
+    margin-right: auto;
   }
 }
 
