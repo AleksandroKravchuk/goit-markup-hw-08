@@ -913,7 +913,7 @@ img {
 }
 
 .team-tumb {
-  max-width: 450px;
+  width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
