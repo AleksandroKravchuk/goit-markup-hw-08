@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity         : 1;
     z-index: 3;
-    // overflow-y: scroll;
+    overflow-y: scroll;
     transition      : opacity $transition-time $function-transition;
 &.is-hidden {
     visibility    : hidden;
@@ -18,15 +18,14 @@
     transform: scale(0.9) translate(-50%, -50%);}
 }
 .modal {
-    position: relative;
-    z-index: 4;
-    overflow-y: scroll;
-    @media screen and (min-width: 480px) {
-    width: 450px;
+    // position: absolute;
     position        : absolute;
-    top             : 50%;
+    top             : 80%;
     left            : 50%;
     transform       : scale(1) translate(-50%, -50%);
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    
 }
     
     @media screen and (min-width: 1200px) {
