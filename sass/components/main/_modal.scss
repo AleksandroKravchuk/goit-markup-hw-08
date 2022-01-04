@@ -19,7 +19,7 @@
 }
 .modal {
     position        : absolute;
-    top             : 10%;
+    top             : 5%;
     left            :50%;
     transform       : scale(1) translateX(-50%);
     @media screen and (min-width: 480px) {
@@ -65,7 +65,7 @@
     fill: $accent-color;}}  
 }
 .modal__button-icon {
-    z-index: 5;
+    z-index: 100;
     fill: $main-text-color;
 }
 .modal-form {
