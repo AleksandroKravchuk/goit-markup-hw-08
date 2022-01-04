@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity         : 1;
     z-index: 3;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     transition      : opacity $transition-time $function-transition;
 &.is-hidden {
     visibility    : hidden;
@@ -58,6 +58,9 @@
  &:hover,
  &:focus {
     fill: $accent-color;}}  
+}
+.modal__button-icon {
+    z-index: 5;
 }
 .modal-form {
     padding   : 40px;
