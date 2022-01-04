@@ -3,7 +3,7 @@
     margin-left: auto;
     padding: 0;
     border: none;
-    // z-index: 2;
+    z-index: 2;
     background-color: $header-fone-color;
     transition: fill $transition-time $function-transition;
     &:hover,
