@@ -19,6 +19,8 @@
 }
 .modal {
     position: relative;
+    z-index: 4;
+    overflow-y: scroll;
     @media screen and (min-width: 480px) {
     width: 450px;
     position        : absolute;
@@ -39,7 +41,7 @@
    
 .modal__button-close {
     position       : absolute;
-    z-index:        4;
+    z-index:        5;
     top            : 8px;
     right          : 8px;
     width          : 30px;
