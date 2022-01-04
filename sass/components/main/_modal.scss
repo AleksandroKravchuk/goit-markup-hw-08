@@ -22,10 +22,13 @@
     top             : 80%;
     left            : 50%;
     transform       : scale(1) translate(-50%, -50%);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480Spx) {
     width: 450px;
     top: 50%;
 }
+    @media screen and (min-width: 1200px) {
+    top  : 50%;
+ }
     
     @media screen and (min-width: 1200px) {
     width : 528px;
@@ -44,13 +47,13 @@
     right          : 8px;
     width          : 30px;
     height         : 30px;
-    border-radius : 50%;
+    border-radius  : 50%;
     cursor         : pointer;
-    background     : salmon;
+    background     : $header-fone-color;
     border         : 1px solid rgba(0, 0, 0, 0.1);
     box-sizing     : border-box;
     display        : flex;
-
+    fill: currentColor;
     justify-content: center;
     align-items    : center;
     transition     : fill $transition-time $function-transition;
