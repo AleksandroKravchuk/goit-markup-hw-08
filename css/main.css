@@ -912,6 +912,16 @@ img {
   line-height: 1.2;
 }
 
+.team-tumb {
+  max-width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-tumb {
+    width: 370px;
+  }
+}
+
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
