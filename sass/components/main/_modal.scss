@@ -21,7 +21,7 @@
     position        : relative;
     // top             : 50%;
     // left            : 50%;
-   
+   overflow-y: scroll;
     @media screen and (min-width: 480px) {
     position : absolute; 
     transform       : scale(1) translate(-50%, -50%);
@@ -66,6 +66,7 @@
 }
 .modal__button-icon {
     z-index: 5;
+    fill: orangered;
 }
 .modal-form {
     padding   : 40px;

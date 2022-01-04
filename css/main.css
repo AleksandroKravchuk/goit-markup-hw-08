@@ -397,6 +397,7 @@ img {
 
 .modal {
   position: relative;
+  overflow-y: scroll;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -463,6 +464,7 @@ img {
 
 .modal__button-icon {
   z-index: 5;
+  fill: orangered;
 }
 
 .modal-form {
