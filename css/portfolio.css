@@ -602,8 +602,14 @@ img {
 }
 
 .services__thumb {
-  width: 370px;
+  max-width: 450px;
   height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .services__thumb {
+    width: 370px;
+  }
 }
 
 .footer-sektion {
