@@ -853,6 +853,10 @@ img {
   }
 }
 
+.section-team__item {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-team__item {
     width: calc((100% - 60px)/2);
@@ -913,7 +917,7 @@ img {
 }
 
 .team-tumb {
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
