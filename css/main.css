@@ -853,6 +853,10 @@ img {
   }
 }
 
+.section-team__item {
+  max-width: 700px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-team__item {
     width: calc((100% - 60px)/2);
