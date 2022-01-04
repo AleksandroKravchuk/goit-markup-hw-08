@@ -397,7 +397,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   -webkit-transform: scale(1) translateX(-50%);
           transform: scale(1) translateX(-50%);
@@ -467,7 +467,7 @@ img {
 
 .modal__button-icon {
   z-index: 5;
-  fill: orangered;
+  fill: #212121;
 }
 
 .modal-form {

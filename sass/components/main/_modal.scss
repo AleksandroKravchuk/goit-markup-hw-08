@@ -19,7 +19,7 @@
 }
 .modal {
     position        : absolute;
-    top             : 20%;
+    top             : 10%;
     left            :50%;
     transform       : scale(1) translateX(-50%);
     @media screen and (min-width: 480px) {
@@ -66,7 +66,7 @@
 }
 .modal__button-icon {
     z-index: 5;
-    fill: orangered;
+    fill: $main-text-color;
 }
 .modal-form {
     padding   : 40px;
