@@ -18,13 +18,14 @@
     transform: scale(0.9) translate(-50%, -50%);}
 }
 .modal {
-    position        : relative;
-    // top             : 50%;
-    // left            : 50%;
-   overflow-y: scroll;
+    $modposition: 35%;
+    position        : absolute;
+    top             : $modposition;
+    left            : $modposition;
+    transform       : scale(1) translate(- $modposition, - $modposition);
     @media screen and (min-width: 480px) {
     position : absolute; 
-    transform       : scale(1) translate(-50%, -50%);
+    transform : scale(1) translate(-50%, -50%);
     width: 450px;
     top: 50%;
     left: 50%;
