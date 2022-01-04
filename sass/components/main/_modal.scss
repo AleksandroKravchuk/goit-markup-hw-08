@@ -19,7 +19,7 @@
 }
 .modal {
     position        : absolute;
-    top             : 82%;
+    top             : 85%;
     left            : 50%;
     transform       : scale(1) translate(-50%, -50%);
     @media screen and (min-width: 480px) {
@@ -50,6 +50,7 @@
     border         : 1px solid rgba(0, 0, 0, 0.1);
     box-sizing     : border-box;
     display        : flex;
+    fill: currentColor;
     justify-content: center;
     align-items    : center;
     transition     : fill $transition-time $function-transition;

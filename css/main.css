@@ -397,7 +397,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 82%;
+  top: 85%;
   left: 50%;
   -webkit-transform: scale(1) translate(-50%, -50%);
           transform: scale(1) translate(-50%, -50%);
@@ -426,7 +426,7 @@ img {
 
 .modal .modal__button-close {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -440,6 +440,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  fill: currentColor;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
