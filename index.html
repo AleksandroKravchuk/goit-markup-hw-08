@@ -162,21 +162,56 @@
             <ul class="section-work__list">
                 <li class="section-work__item">
                 <div class="section-work__thumb">
-                    <img src="./images/boх1.jpg" alt="Верстка" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                            ./images/work/r1webp.webp 370w, 
+                            ./images/work/r12xwebp.webp 740w,
+                            ./images/work/r13xwebp.webp 1110w" 
+                            type="image/webp" sizes="33.3vw">
+                        <img srcset="
+                            ./images/work/r1.jpg 1x, 
+                            ./images/work/r12x.jpg 2x, 
+                            ./images/work/r13x.jpg 3x" 
+                            src="./images/boх1.jpg" alt="Верстка">
+                    </picture>
                     <div class="section-work__window">
                         <p class="section-work__text">Десктопные приложения</p>
                     </div>
                 </div></li>
                 <li class="section-work__item">
                 <div class="section-work__thumb">
-                    <img src="./images/img(3).jpg" alt="Разработка мобильных приложений" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                        ./images/work/r2webp.webp 370w, 
+                        ./images/work/r2x2webp.webp 740w,
+                        ./images/work/r2x3webp.webp 1110w" 
+                        type="image/webp" sizes="33.3vw">
+                        <img srcset="
+                        ./images/work/r2.jpg 1x, 
+                        ./images/work/r2x2.jpg 2x, 
+                        ./images/work/r2x3.jpg 3x" 
+                        src="./images/img(3).jpg" alt="Разработка мобильных приложений">
+                    </picture>
+    
                     <div class="section-work__window">
                         <p class="section-work__text">Мобильные приложения</p>
                     </div>
                 </div></li>
                 <li class="section-work__item">
                 <div class="section-work__thumb">
-                    <img src="./images/img(2).jpg" alt="Разработа дизайна" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                            ./images/work/r3webp.webp 370w, 
+                            ./images/work/r3x2webp.webp 740w,
+                            ./images/work/r3x3webp.webp 1110w" 
+                            type="image/webp" sizes="33.3vw">
+                        <img srcset="
+                            ./images/work/r3.jpg 1x, 
+                            ./images/work/r3x2.jpg 2x, 
+                            ./images/work/r3x3.jpg 3x" 
+                            src="./images/img(2).jpg" alt="Разработа дизайна">
+                    </picture>
+                    
                     <div class="section-work__window">
                         <p class="section-work__text">Дизайнерские решения</p>
                     </div>
@@ -370,7 +405,7 @@
     <!--Подвал-->
     <footer class="footer-sektion">
         <div class="container">
-            <div>
+            <div class="footer-sektion__block">
             <a href="./index.html" class="logo footer-sektion__logo">Web<span class="logo__footer">Studio</span></a>
             <address>
                 <p class="footer-sektion__adress">г. Киев, пр-т Леси Украинки, 26</p>

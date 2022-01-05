@@ -1,6 +1,7 @@
 .join {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
     margin: 0;
 }
@@ -14,8 +15,6 @@
     line-height   : 1.14;
     text-transform: uppercase;
     color         : $header-fone-color;
-    @media screen and (max-width: 767px) {
-    margin-top: 60px;}
 }
     &__list {
     display: flex;

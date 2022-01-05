@@ -123,16 +123,7 @@ img {
   }
   .mobile__menu-container.is-open {
     display: block;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .mobile__menu-container {
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translatex(-50%);
-            transform: translatex(-50%);
-    width: 480px;
+    overflow: hidden;
   }
 }
 
@@ -457,15 +448,15 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .services__list-button {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -576,7 +567,19 @@ img {
   font-size: 18px;
   line-height: 1.55;
   color: #FFFFFF;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__text-overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services__text-overlay {
+    padding: 63px 24px;
+  }
 }
 
 .services__content {
@@ -604,7 +607,6 @@ img {
 
 .services__thumb {
   max-width: 450px;
-  height: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -684,9 +686,16 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-sektion__block {
+    margin-bottom: 60px;
+  }
+}
+
 .join {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -709,12 +718,6 @@ img {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 767px) {
-  .join__text {
-    margin-top: 60px;
-  }
-}
-
 .join__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,12 +733,6 @@ img {
 
 .subscription {
   margin-left: auto;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .subscription {
-    margin-top: 60px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -963,11 +960,5 @@ img {
 
 .icon-list__link--footer:hover, .icon-list__link--footer:focus {
   background-color: #2196F3;
-}
-
-@media screen and (max-width: 767px) {
-  .icon-list__link--footer {
-    margin-bottom: 60px;
-  }
 }
 /*# sourceMappingURL=portfolio.css.map */
