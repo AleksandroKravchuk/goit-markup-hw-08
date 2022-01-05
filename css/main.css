@@ -465,11 +465,6 @@ img {
   fill: #2196F3;
 }
 
-.modal__button-icon {
-  z-index: 100;
-  fill: #212121;
-}
-
 .modal-form {
   padding: 40px;
   text-align: start;
@@ -1041,6 +1036,14 @@ img {
   display: none;
 }
 
+.mobile__menu-container {
+  display: none;
+}
+
+.mobile__menu-container.is-open {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .mobile__menu-container {
     position: absolute;
@@ -1050,21 +1053,12 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 48px 40px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    display: none;
-  }
-  .mobile__menu-container.is-open {
-    display: block;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile__menu-container {
     display: none;
   }
 }
