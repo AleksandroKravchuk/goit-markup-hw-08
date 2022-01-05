@@ -27,6 +27,7 @@
     display: none;
     &.is-open {
     display: block;
+    overflow: hidden;
     }
 
   @media screen and (max-width: 767px) {
