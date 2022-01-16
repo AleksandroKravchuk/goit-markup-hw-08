@@ -5,6 +5,11 @@
     @media screen and (max-width: 767px) {
     padding: 15px 0px;  }
 }
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+} 
 .main-nave {
     display    : flex;
     align-items: center;}
